@@ -82,6 +82,7 @@
    
  
     <section class="contacts" id="contacts">
+      <div>
       <div class="heading">
 	   <div class="red-box"></div>
 	   <h1>Contact</h1>
@@ -109,7 +110,8 @@
 				   Singapore 608586
 				</p>
             </div>           
-        </div>      
+        </div>    
+        </div>  
      </section>
 
   
@@ -134,12 +136,14 @@
 				<h3>Quick Links</h3>
 			</div>
 			<div class="footer-col-desc">
-					<a href="index.html">Home</a>
-					<a href="about.html">Company Profile</a>
-					<a href="management.html">Management/Consultancy</a>
-					<a href="jointventure.html">Joint Venture Enquiries</a>
-					<a href="contact.html">Contact Us</a>
-				 </div>
+      <a href="index.html">Home</a>
+      <a href="about.html">Company Profile</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="Project.html">Project</a>
+      <a href="management.html">Management</a>
+      <a href="jointventure.html">Joint Venture Enquiries</a>
+      <a href="contact.html">Contact Us</a>
+			</div>
 		</div>
 
 		<div class="footer-col footer-col-3">
@@ -156,9 +160,14 @@
 		</div>
 
 	</div>
+  		<div class="footer-ed">
+				<p>© 2025 AGA International PRIVATE LIMITED.AlL Rights Reserved</p>
+			</div>
 	<!--   === Footer Contents Ends ===   -->
 </section>
-<!--   *** Footer Section Ends ***   -->
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -167,19 +176,19 @@
 <script src="js/script.js"></script>
 
 <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+ menuToggle.addEventListener('click', () => {
+ navbar.classList.toggle('active');
+});
 
    document.querySelectorAll('.nav-link').forEach(link => {
     if (link.href === window.location.href) {
       link.setAttribute('aria-current', 'page');
     }
   });
-// Toggle button for responsive sidebar menu
-const toggleBtn = document.querySelector('.menu-toggle');
-const mobileNavbar = document.querySelector('.navbar');
 
-toggleBtn.addEventListener('click', () => {
-  mobileNavbar.classList.toggle('active');
-});
 
 lightGallery(document.querySelector('.projects .box-container'));
 

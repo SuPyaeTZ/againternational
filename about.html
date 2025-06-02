@@ -133,108 +133,14 @@
     <section class="discount">
       <div class="section__container discount__container">
         <p class="section__header">Our Project</p>
-        <h2 class="section__title"></h2>
+        <h2 class="section__title">AGA International PRIVATE LIMITED</h2>
       <a href="project.html" class="btn">SEE MORE</a>
 
       </div>
     </section>
 
 
-<!-- <div class="ScriptTop">
-    <div class="rt-container">
-        <div class="col-rt-4" id="float-right">
- 
-        </div>
-        <div class="col-rt-2">
-            
-        </div>
-    </div>
-</div>
 
-<header class="ScriptHeader">
-    <div class="rt-container">
-    	<div class="col-rt-12">
-        	<div class="rt-heading">
-            	<h1>Project</h1>
-                <p>A pure CSS 3D coverflow image slider.</p>
-            </div>
-        </div>
-    </div>
-
-
-<section class="cc">
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="Scriptcontent">
-              
- partial:index.partial.html -->
-
-<!-- <div class="container">
-  <div class="wgh-slider">
-    <input class="wgh-slider-target" type="radio" id="slide-1" name="slider"/>
-    <input class="wgh-slider-target" type="radio" id="slide-2" name="slider"/>
-    <input class="wgh-slider-target" type="radio" id="slide-3" name="slider" checked="checked"/>
-    <input class="wgh-slider-target" type="radio" id="slide-4" name="slider"/>
-    <input class="wgh-slider-target" type="radio" id="slide-5" name="slider"/>
-
-    <div class="wgh-slider__viewport">
-      <div class="wgh-slider__viewbox">
-        <div class="wgh-slider__container">
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="images/Aga_3.jpg" alt="The 5th Exotic"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="">The 5th Exotic</a><span>Quantic</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-1" title="Show product 1"></label>
-            </div>
-          </div>
-          
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="images/Aganew.jpg" alt="The 5th Exotic"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="">The 5th Exotic</a><span>Quantic</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-2" title="Show product 2"></label>
-            </div>
-          </div>
-
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="assets/slide3.JPG" alt="The 5th Exotic"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="">The 5th Exotic</a><span>Quantic</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-3" title="Show product 3"></label>
-            </div>
-          </div>
-
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="assets/slide4.JPG" alt="The 5th Exotic"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="">The 5th Exotic</a><span>Quantic</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-4" title="Show product 4"></label>
-            </div>
-          </div>
-
-          <div class="wgh-slider-item">
-            <div class="wgh-slider-item__inner">
-              <figure class="wgh-slider-item-figure"><img class="wgh-slider-item-figure__image" src="assets/slide5.jpg" alt="RYSY - Traveler LP"/>
-                <figcaption class="wgh-slider-item-figure__caption"><a href="https://picsum.photos/id/237/480/480">RYSY - Traveler LP</a><span>RYSY</span></figcaption>
-              </figure>
-              <label class="wgh-slider-item__trigger" for="slide-5" title="Show product 5"></label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-           
-    		</div>
-		</div>
-    </div>
-</section>  -->
 
   <section class="section__container client__container">
       <!-- <img src="assets/bg.png" alt="bg" class="client__bg" /> -->
@@ -334,11 +240,13 @@
 				<h3>Quick Links</h3>
 			</div>
 			<div class="footer-col-desc">
-            <a href="index.html">Home</a>
-            <a href="about.html">Company Profile</a>
-            <a href="management.html">Management/Consultancy</a>
-            <a href="jointventure.html">Joint Venture Enquiries</a>
-            <a href="contact.html">Contact Us</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">Company Profile</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="Project.html">Project</a>
+      <a href="management.html">Management</a>
+      <a href="jointventure.html">Joint Venture Enquiries</a>
+      <a href="contact.html">Contact Us</a>
 			</div>
 		</div>
 
@@ -356,6 +264,9 @@
 		</div>
 
 	</div>
+  		<div class="footer-ed">
+				<p>© 2025 AGA International PRIVATE LIMITED.AlL Rights Reserved</p>
+			</div>
 	<!--   === Footer Contents Ends ===   -->
 </section>
 <!--   *** Footer Section Ends ***   -->
@@ -370,18 +281,19 @@
 
 <script>
 
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+ menuToggle.addEventListener('click', () => {
+ navbar.classList.toggle('active');
+});
+
   document.querySelectorAll('.nav-link').forEach(link => {
     if (link.href === window.location.href) {
       link.setAttribute('aria-current', 'page');
     }
   });
-// Toggle button for responsive sidebar menu
-const toggleBtn = document.querySelector('.menu-toggle');
-const mobileNavbar = document.querySelector('.navbar');
 
-toggleBtn.addEventListener('click', () => {
-  mobileNavbar.classList.toggle('active');
-});
 
 lightGallery(document.querySelector('.projects .box-container'));
 
